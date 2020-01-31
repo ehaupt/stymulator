@@ -413,10 +413,10 @@ bool	CLzhDepacker::LzUnpack(void *pSrc,int srcSize,void *pDst,int dstSize)
 
     decode_start ();
 
-	int origsize = dstSize;
+	uint origsize = dstSize;
     while (origsize != 0)
     {
-        int n = (uint) ((origsize > DICSIZ) ? DICSIZ : origsize);
+        uint n = (origsize > DICSIZ) ? DICSIZ : origsize;
         decode (n, outbuf);
 		if (with_error)
 			break;

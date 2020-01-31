@@ -32,6 +32,8 @@
 #ifndef __DIGIDRUM__
 #define __DIGIDRUM__
 
+#define	MAX_DIGIDRUM	40
+
 extern ymu8		*	sampleAdress[];
 extern ymu32		sampleLen[];
 
